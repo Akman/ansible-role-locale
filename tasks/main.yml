@@ -1,0 +1,7 @@
+---
+# tasks/main.yml
+
+- name: Ensure locale is set
+  locale_gen:
+    name: "{{ locale }}"
+    state: present
